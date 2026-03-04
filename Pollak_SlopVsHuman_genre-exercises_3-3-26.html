@@ -107,7 +107,7 @@
     Markey, B., Brown, D. W., Laudenbach, M., &amp; Kohler, A. (2024). Dense and disconnected: Analyzing the sedimented style of ChatGPT-generated text at scale. <em>Written Communication, 41</em>(4), 571–600; and
     Reinhart, A., Markey, B., Laudenbach, M., Pantusen, K., Yurko, R., Weinberg, G., &amp; Brown, D. W. (2025). Do LLMs write like humans? Variation in grammatical and rhetorical styles. <em>Proceedings of the National Academy of Sciences, 122</em>(8), e2422455122.
     Together, these studies find that instruction-tuned LLMs produce a distinctive style: significantly more informationally dense than even professional human writing, with nominalizations and present participial clauses used at roughly twice to five times the human rate, and with the hedges, modals of possibility, and clausal co-ordination that keep human prose open and dialogic largely absent.
-    Because this style is increasingly present in writing produced with AI assistance — and can easily be absorbed into a writer's own habits — these exercises focus on developing the ability to recognise it, revise it, and write against it across three genres where the contrast matters most.
+    Because this style is increasingly present in writing produced with AI assistance (and it can easily be absorbed into a writer's own habits), these exercises focus on developing the ability to recognise it, revise it, and write against it across three genres where the contrast matters most.
   </div>
   <div class="genre-tabs" id="genre-tabs"></div>
 </div>
@@ -121,7 +121,7 @@ const genres = [
     color: "#4a6fa5",
     note: {
       heading: "AI slop style vs. a more human style in cover letters",
-      body: "Many applicants reach for AI slop style because it sounds \"professional\" — but it often produces the opposite effect. When verbs are turned into nouns, the person behind the letter disappears: instead of someone who did things, the reader sees a list of abstract qualities. Markey et al. (2024) found that ChatGPT-generated text is significantly more informationally dense than even professional academic writing, producing prose that is dialogically closed — assertive, noun-heavy, and without the hedges and first-person engagement that make writing feel human. a more human style restores the writer as an active agent, uses verbs to describe concrete actions, and adds appropriate hedging when describing future fit. The goal is not to sound modest — it is to sound human and specific.",
+      body: "Many applicants reach for AI slop style because it sounds \"professional\", but it often produces the opposite effect. When verbs are turned into nouns, the person behind the letter disappears: instead of someone who did things, the reader sees a list of abstract qualities. Markey et al. (2024) found that ChatGPT-generated text is significantly more informationally dense than even professional academic writing, producing prose that is dialogically closed: assertive, noun-heavy, and without the hedges and first-person engagement that make writing feel human. a more human style restores the writer as an active agent, uses verbs to describe concrete actions, and adds appropriate hedging when describing future fit. The goal is not to sound modest; it is to sound human and specific.",
       bullets: [
         { label: "AI slop style risk", text: "Nominalizations bury the \"I\": \"My demonstrated expertise in stakeholder engagement…\" reads like a CV, not a letter." },
         { label: "a more human style approach", text: "Keep verbs active and personal: \"I have spent five years managing…\" is warmer and more direct." },
@@ -137,7 +137,7 @@ const genres = [
           { label: "Option 2", text: "I have spent five years managing client relationships and developing communications strategies, and throughout that time I have tried to deliver consistently high-quality work. I believe these experiences make me a strong candidate for this role." }
         ],
         answer: 0,
-        explanation: "Option 1 is AI slop style. The nominalizations ('management', 'development', 'delivery', 'commitment') turn actions into abstract nouns and push the writer out of the sentence — there is no 'I' doing anything. Reinhart et al. (2025) found instruction-tuned LLMs use nominalizations at 1.5–2× the human rate, and Markey et al. (2024) found that this nominalization-heavy style produces text that feels informationally dense but dialogically closed — present but empty. Option 2 uses verbs ('managing', 'developing', 'deliver') and restores the writer as an active agent with a voice."
+        explanation: "Option 1 is AI slop style. The nominalizations ('management', 'development', 'delivery', 'commitment') turn actions into abstract nouns and push the writer out of the sentence, so there is no 'I' doing anything. Reinhart et al. (2025) found instruction-tuned LLMs use nominalizations at 1.5–2× the human rate, and Markey et al. (2024) found that this nominalization-heavy style produces text that feels informationally dense but dialogically closed: present but empty. Option 2 uses verbs ('managing', 'developing', 'deliver') and restores the writer as an active agent with a voice."
       },
       {
         type: "transform", tag: "Transformation",
@@ -162,7 +162,7 @@ const genres = [
           { label: "Option 2", text: "I am applying because I feel that the direction my career has taken so far aligns well with the innovative culture your organisation seems to foster, and I believe I could contribute meaningfully to your team." }
         ],
         answer: 1,
-        explanation: "Option 2 uses a more human style hedging appropriately: 'I feel that', 'seems to foster', 'I believe I could' all signal self-awareness about an uncertain future. Markey et al. (2024) found that LLM-generated text scores very low on the dimension associated with hedges and modals of possibility, producing prose that is closed to alternative perspectives — the opposite of what a cover letter needs. Hedging is not weakness; it signals the kind of dialogic, self-aware voice that distinguishes human writing. Option 1's 'guarantees a meaningful contribution' is overconfident — no one can guarantee this — and 'professional development trajectory' is a nominalized, jargon-heavy noun phrase that sounds hollow."
+        explanation: "Option 2 uses a more human style hedging appropriately: 'I feel that', 'seems to foster', 'I believe I could' all signal self-awareness about an uncertain future. Markey et al. (2024) found that LLM-generated text scores very low on the dimension associated with hedges and modals of possibility, producing prose that is closed to alternative perspectives, and this is the opposite of what a cover letter needs. Hedging is not weakness; it signals the kind of dialogic, self-aware voice that distinguishes human writing. Option 1's 'guarantees a meaningful contribution' is overconfident (no one can guarantee this), and 'professional development trajectory' is a nominalized, jargon-heavy noun phrase that sounds hollow."
       }
     ]
   },
@@ -171,10 +171,10 @@ const genres = [
     color: "#5c7a6b",
     note: {
       heading: "AI slop style vs. a more human style in instructional writing",
-      body: "Instruction writing has its own version of the AI slop style/human style contrast. AI slop style tends to produce passive, impersonal, noun-heavy instructions that obscure who does what and when. Reinhart et al. (2025) found that instruction-tuned LLMs use nominalizations at 1.5–2× the human rate — patterns that become serious usability problems in instructions. Interestingly, they also found that GPT-4o actually uses the agentless passive at roughly half the human rate, but pairs this with far more nominalization and participial modification, which creates a different kind of impersonality: actions are hidden inside noun phrases rather than passive constructions. a more human style — with its preference for active verbs and explicit agents — naturally produces clearer, more usable instructions. In this genre, a more human style's \"hedging\" is also important: good instructions acknowledge when steps may vary, when users need to make judgements, or when something might take longer than expected.",
+      body: "Instruction writing has its own version of the AI slop style/human style contrast. AI slop style tends to produce passive, impersonal, noun-heavy instructions that obscure who does what and when. Reinhart et al. (2025) found that instruction-tuned LLMs use nominalizations at 1.5–2× the human rate; these patterns become serious usability problems in instructions. Interestingly, they also found that GPT-4o actually uses the agentless passive at roughly half the human rate, but pairs this with far more nominalization and participial modification, which creates a different kind of impersonality: actions are hidden inside noun phrases rather than passive constructions. a more human style, with its preference for active verbs and explicit agents, naturally produces clearer, more usable instructions. In this genre, a more human style's \"hedging\" is also important: good instructions acknowledge when steps may vary, when users need to make judgements, or when something might take longer than expected.",
       bullets: [
-        { label: "Clarity", text: "AI slop style turns actions into things: 'completion of the registration process requires the submission of…' — a more human style names the agent: 'To register, you will need to submit…'" },
-        { label: "Ambiguity risk", text: "Agentless passives hide who does what: 'The form should be signed' — signed by whom? a more human style says: 'You should sign the form before…'" },
+        { label: "Clarity", text: "AI slop style turns actions into things: 'completion of the registration process requires the submission of…'; a more human style names the agent: 'To register, you will need to submit…'" },
+        { label: "Ambiguity risk", text: "Agentless passives hide who does what: 'The form should be signed' (signed by whom?) a more human style says: 'You should sign the form before…'" },
         { label: "Hedging", text: "a more human style hedging is practical in instructions: 'This typically takes around ten minutes, though it may take longer depending on your connection.'" }
       ]
     },
@@ -187,7 +187,7 @@ const genres = [
           { label: "Option 2", text: "Before you start the installation, check that your system meets the requirements and download the most recent version of the software." }
         ],
         answer: 1,
-        explanation: "Option 2 is far clearer. Option 1 uses three nominalizations ('commencement', 'verification', 'downloading') which turn actions into abstract things. The passive 'should be undertaken by the user' is also roundabout — Option 2 simply says 'check' and 'download', using imperative verbs directed at 'you'. Reinhart et al. (2025) found instruction-tuned LLMs use present participial clauses at 2–5× the human rate and nominalizations at 1.5–2× the rate — patterns that are especially disorienting in instructions, where clarity of action is paramount. Markey et al. (2024) further found that this nominalization-heavy style produces text that feels dense but imprecise, full of abstract noun phrases that don't concretize what anyone should actually do."
+        explanation: "Option 2 is far clearer. Option 1 uses three nominalizations ('commencement', 'verification', 'downloading') which turn actions into abstract things. The passive 'should be undertaken by the user' is also roundabout; Option 2 simply says 'check' and 'download', using imperative verbs directed at 'you'. Reinhart et al. (2025) found instruction-tuned LLMs use present participial clauses at 2–5× the human rate and nominalizations at 1.5–2× the rate, and these are especially disorienting in instructions, where clarity of action is paramount. Markey et al. (2024) further found that this nominalization-heavy style produces text that feels dense but imprecise, full of abstract noun phrases that don't concretize what anyone should actually do."
       },
       {
         type: "transform", tag: "Transformation",
@@ -198,7 +198,7 @@ const genres = [
       },
       {
         type: "spotfix", tag: "Spot the ambiguity",
-        question: "This AI slop style manual excerpt has several points of ambiguity — moments where it is unclear who acts, when, or under what conditions. Identify at least three problems, then rewrite in a more human style.",
+        question: "This AI slop style manual excerpt has several points of ambiguity; it is often unclear who acts, when, or under what conditions. Identify at least three problems, then rewrite in a more human style.",
         passage: "Following the completion of initial setup, configuration adjustments may be required. Adjustment of display settings and the modification of notification preferences can be accessed through the Settings menu. In the event of error occurrence, the execution of a system restart is recommended prior to the undertaking of further troubleshooting steps.",
         features: ["completion of initial setup","configuration adjustments may be required","can be accessed","error occurrence","execution of a system restart is recommended","undertaking of further troubleshooting steps"],
         tip: "For each nominalization, ask: who does this? When? Under what conditions? Try 'Once you have completed…', 'you may need to…', 'If you see an error…'",
@@ -218,10 +218,10 @@ const genres = [
     color: "#8b5e3c",
     note: {
       heading: "AI slop style vs. a more human style in proposals",
-      body: "Proposals are where the AI slop style/human style tension is most educationally interesting. Writers often reach for AI slop style because it sounds authoritative — but proposals make claims about uncertain futures, so appropriate hedging is not weakness. It is intellectual honesty, and it is often more persuasive. Markey et al. (2024) found that LLM-generated text scores very low on the dimension that captures hedges and modals of possibility — producing writing that is dialogically closed and doesn't acknowledge alternative perspectives. Reinhart et al. (2025) further found that instruction tuning pushes models toward an informationally dense, noun-heavy style even when prompted to write differently, suggesting the overconfidence of AI slop style is a systematic feature of LLM writing, not just a prompt problem. An overconfident AI slop style proposal can seem naïve or unaware of complexity. A well-hedged a more human style proposal shows that the writer has thought carefully about what might happen and under what conditions. The key is calibrated hedging: not so much that the argument collapses, but enough to be credible.",
+      body: "Proposals are where the AI slop style/human style tension is most educationally interesting. Writers often reach for AI slop style because it sounds authoritative, but proposals make claims about uncertain futures, so appropriate hedging is not weakness. It is intellectual honesty, and it is often more persuasive. Markey et al. (2024) found that LLM-generated text scores very low on the dimension that captures hedges and modals of possibility, which produces writing that is dialogically closed and doesn't acknowledge alternative perspectives. Reinhart et al. (2025) further found that instruction tuning pushes models toward an informationally dense, noun-heavy style even when prompted to write differently, suggesting the overconfidence of AI slop style is a systematic feature of LLM writing, not just a prompt problem. An overconfident AI slop style proposal can seem naïve or unaware of complexity. A well-hedged a more human style proposal shows that the writer has thought carefully about what might happen and under what conditions. The key is calibrated hedging: not so much that the argument collapses, but enough to be credible.",
       bullets: [
-        { label: "The AI slop style trap", text: "'Implementation of this scheme will result in a 30% reduction in costs.' — No proposal can guarantee this. The overconfidence invites scepticism." },
-        { label: "a more human style hedging", text: "'Evidence suggests this scheme could reduce costs by around 30%, though this would depend on…' — Acknowledges uncertainty while still making a case." },
+        { label: "The AI slop style trap", text: "'Implementation of this scheme will result in a 30% reduction in costs.' No proposal can guarantee this. The overconfidence invites scepticism." },
+        { label: "a more human style hedging", text: "'Evidence suggests this scheme could reduce costs by around 30%, though this would depend on…' This version acknowledges uncertainty while still making a case." },
         { label: "Calibration", text: "Too much hedging weakens proposals just as much as too little. a more human style aims for precision about uncertainty, not endless qualification." }
       ]
     },
@@ -234,11 +234,11 @@ const genres = [
           { label: "Option 2", text: "Evidence from pilot programmes in comparable organisations suggests that introducing a four-day working week might lead to improved staff retention and reduced absenteeism, though the effects on productivity would likely vary across departments." }
         ],
         answer: 1,
-        explanation: "Option 1 is AI slop style overconfidence: 'will result in', 'elimination of', and 'across all departments' make claims no proposal can guarantee. 'Elimination of absenteeism' is particularly problematic — implausible claims undermine credibility. Option 2 grounds the claim in evidence ('pilot programmes'), uses appropriate hedges ('suggests', 'might lead to', 'would likely vary'), and honestly acknowledges variation across departments. Markey et al. (2024) found that LLM-generated text scores low on the dimension associated with hedges and modals of possibility, producing writing closed to alternative perspectives — exactly the overconfidence problem in Option 1."
+        explanation: "Option 1 is AI slop style overconfidence: 'will result in', 'elimination of', and 'across all departments' make claims no proposal can guarantee. 'Elimination of absenteeism' is particularly problematic; implausible claims undermine credibility. Option 2 grounds the claim in evidence ('pilot programmes'), uses appropriate hedges ('suggests', 'might lead to', 'would likely vary'), and honestly acknowledges variation across departments. Markey et al. (2024) found that LLM-generated text scores low on the dimension associated with hedges and modals of possibility, producing writing closed to alternative perspectives, and this is exactly the overconfidence problem in Option 1."
       },
       {
         type: "transform", tag: "Adding calibrated hedges",
-        question: "This proposal sentence makes every claim with complete certainty. Add hedging to make it credible — but do not hedge so much that the argument collapses.",
+        question: "This proposal sentence makes every claim with complete certainty. Add hedging to make it credible, but do not hedge so much that the argument collapses.",
         passage: "The redesign of the library study spaces will attract more students to campus, improve academic performance across all year groups, and increase satisfaction scores in the annual student survey.",
         tip: "Try grounding each claim in evidence or reasoning ('based on feedback…', 'research suggests…'). Use 'could', 'might', 'seems likely to'. Acknowledge that effects may vary. But keep the overall argument positive and clear.",
         model: "Redesigning the library study spaces could attract more students to campus and might contribute to improved academic performance, particularly for students who currently find the existing spaces difficult to work in. Based on feedback collected during our consultation, we would also expect satisfaction scores in the annual student survey to improve, though the size of any effect would depend on how extensively the spaces are used."
@@ -253,7 +253,7 @@ const genres = [
       },
       {
         type: "rank", tag: "Calibration exercise",
-        question: "Rank these three versions of the same proposal claim from weakest to strongest. Consider: which is overconfident (AI slop style), which is appropriately hedged (a more human style — good), and which is over-hedged (excessively)?",
+        question: "Rank these three versions of the same proposal claim from weakest to strongest. Consider: which is overconfident (AI slop style), which is appropriately hedged (a more human style; good), and which is over-hedged (excessively)?",
         options: [
           { label: "Version A", text: "This intervention will dramatically improve student wellbeing across all year groups and will transform the student experience within one academic year." },
           { label: "Version B", text: "This intervention seems likely to improve student wellbeing, particularly for students in their first year, though the extent of the effect may vary depending on uptake and individual circumstances." },
@@ -261,7 +261,7 @@ const genres = [
         ],
         ranking: ["Version C","Version A","Version B"],
         rankLabels: ["Weakest (over-hedged)","Problematic (overconfident)","Strongest (calibrated)"],
-        explanation: "Version C (weakest) is over-hedged to the point of paralysis — stacking 'perhaps', 'possible', 'might conceivably', 'tentatively', 'could be described as' signals that the writer has no confidence in their own proposal. Version A (problematic) commits the opposite error: 'will dramatically improve' and 'will transform' are overconfident claims that invite scepticism — and as Markey et al. (2024) found, this kind of dialogically closed assertiveness, without hedges or modals of possibility, is a defining characteristic of LLM-generated text. Version B (strongest) is calibrated: 'seems likely', 'particularly for', 'may vary depending on' acknowledge uncertainty honestly while still making a positive, coherent case."
+        explanation: "Version C (weakest) is over-hedged to the point of paralysis: stacking 'perhaps', 'possible', 'might conceivably', 'tentatively', 'could be described as' signals that the writer has no confidence in their own proposal. Version A (problematic) commits the opposite error: 'will dramatically improve' and 'will transform' are overconfident claims that invite scepticism; as Markey et al. (2024) found, this kind of dialogically closed assertiveness, without hedges or modals of possibility, is a defining characteristic of LLM-generated text. Version B (strongest) is calibrated: 'seems likely', 'particularly for', 'may vary depending on' acknowledge uncertainty honestly while still making a positive, coherent case."
       }
     ]
   }
@@ -462,7 +462,7 @@ function renderRankList(exIdx) {
     const opt = ex.options[oi];
     const isCorrect = submitted && ex.ranking[pos] === opt.label;
     const cls = submitted ? (isCorrect ? 'rank-item rank-correct' : 'rank-item rank-wrong') : 'rank-item';
-    const posLabel = submitted ? `#${pos+1} — ${ex.rankLabels[pos]}` : `#${pos+1}`;
+    const posLabel = submitted ? `#${pos+1}: ${ex.rankLabels[pos]}` : `#${pos+1}`;
     return `<div class="${cls}">
       <div class="rank-arrows">
         <button class="rank-arrow" ${pos===0||submitted?'disabled':''} onclick="moveRank(${exIdx},${pos},-1)">▲</button>
@@ -495,7 +495,7 @@ function checkRank(exIdx) {
   const correct = JSON.stringify(rankState[exIdx].order.map(i => ex.options[i].label)) === JSON.stringify(ex.ranking);
   document.getElementById(`fb-head-${exIdx}`).textContent = correct
     ? '\u2713 Perfect ranking!'
-    : 'Here is the intended ranking — see the explanation below.';
+    : 'Here is the intended ranking; see the explanation below.';
   document.getElementById(`fb-body-${exIdx}`).textContent = ex.explanation;
   document.getElementById(`fb-${exIdx}`).classList.add('visible');
 }
